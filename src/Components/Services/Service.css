@@ -1,0 +1,111 @@
+.S-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+}
+.container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   gap: 4rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-gap: 30px; /* Adjust the gap between grid items */
+  }
+
+  .grid-item {
+    width: 100%;
+    color: #51a4f7;
+    padding: 35px 45px;
+    box-shadow: 5px 4px 3px rgba(124, 170, 255, 0.39), -3px -3px 5px rgba(168, 184, 255, 0.3);
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: .8rem;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+  }
+  .grid-item:hover{
+   scale: 1.1;
+   box-shadow: 8px 6px 5px rgba(41, 115, 253, 0.39), -3px -3px 5px rgba(92, 122, 255, 0.3);
+  }
+ .rightSide{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+ } 
+ .title{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+ }
+ .rightSide > h2{
+   font-size: 2.2rem;
+   letter-spacing: 1px;
+ }
+ .Services{
+    line-height: 2rem;
+ }
+ .Services > li{
+    font-size: 1.1rem;
+    font-weight: bolder;
+ }
+  .icon{
+    font-size: 35px;
+    color: #56a4f8; 
+  }
+
+  .grid-container >.cardiology{
+   border-radius: 40% 0 0 0;
+   background-color: #51a4f7;
+   color: white;
+   scale: 1.1;
+   box-shadow: 8px 6px 5px rgba(41, 115, 253, 0.39), -3px -3px 5px rgba(92, 122, 255, 0.3);
+
+  }
+   .grid-container >.cardiology >.cardiologyIcon{
+      color: white;
+   }
+   .container-2{
+      padding: 2rem;
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex: 1 2;
+      flex-direction: row;
+      /* gap: 4rem; */
+   }
+   .img-container> img{
+      border-radius: 25% 0% 16% 2%;
+      box-shadow:
+      inset 0 -3em 3em rgba(155, 155, 155, 0.3),
+      0 0 0 2px white,
+      0.3em 0.3em 1em rgba(17, 17, 17, 0.6);
+  }
+
+
+  @media (max-width: 724px) {
+   .grid-container{
+     display: none;
+   }
+   .container-2{
+      padding: 0;
+   }
+   .hero-container{
+      padding: 0 1.2rem;
+  }
+  .Services{
+   padding: 0 1.2rem;
+   list-style-type: square;
+  }
+ }

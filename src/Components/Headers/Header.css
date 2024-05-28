@@ -1,0 +1,97 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: -10px -20px 16px 10px black;
+  padding: 0px 30px;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+ul:nth-child(1) {
+  color: #06bcfb;
+}
+
+.nav-links > li > .btn {
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px 20px;
+  color: #4884ee;
+  background: none;
+  border: 1px solid #06bcfb;
+}
+.nav-links > li > .btn:hover {
+  color: white;
+  background-color: #06bcfb;
+  background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
+}
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links li a {
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  position: relative;
+  color: #333;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before {
+  width: 100%;
+  letter-spacing: 2px;
+}
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden-btn {
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px 20px;
+  color: #4884ee;
+  background: none;
+  border: 1px solid #06bcfb;
+  display: none;
+}
+.hidden-btn:hover{
+  color: white;
+  background-color: #06bcfb;
+  background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
+}
+@media (max-width: 765px) {
+  .nav-links {
+    display: none;
+  }
+  .hidden-btn{
+    display: flex;
+  }
+}
